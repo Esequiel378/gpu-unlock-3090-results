@@ -2,7 +2,7 @@ The benchmark data and charts in this repository (results/ and charts/*.png)
 are licensed under the Creative Commons Attribution 4.0 International License
 (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/legalcode
 
-Copyright (c) 2026 the gpu-unlock-3090-results authors
+Copyright (c) 2026 Esequiel Albornoz (@Esequiel378)
 
 The scripts and the NixOS module are MIT-licensed (see LICENSE).
 
