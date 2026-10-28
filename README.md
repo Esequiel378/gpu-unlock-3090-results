@@ -25,12 +25,14 @@ Gains are throughput ratios: +55% means 1.55× the images per second. Every cell
 
 ## Why the undervolt helps
 
-The undervolt is two settings, applied after boot:
+"Undervolt" here means a clock-capped curve offset, the usual way to undervolt on Linux, which has no voltage control or curve editor. It is two settings, applied after boot:
 
-- `nvidia-smi -lgc 210,1695` caps the core clock at 1695 MHz.
-- A +150 MHz offset on the GPC voltage/frequency curve (`nvmlDeviceSetGpcClkVfOffset`), so each clock runs at a lower voltage.
+- A +150 MHz offset on the GPC voltage/frequency curve (`nvmlDeviceSetGpcClkVfOffset`). On its own this is an overclock: every voltage step maps to a clock 150 MHz higher.
+- `nvidia-smi -lgc 210,1695` caps the core clock at 1695 MHz, which cancels the clock gain.
 
-The power limit stays at the stock 350 W.
+Together, the card runs the same clock at a lower voltage: 1695 MHz at roughly the voltage that used to give ~1545 MHz. The power limit stays at the stock 350 W.
+
+NVIDIA doesn't expose core voltage on GeForce under Linux, so the lower voltage is inferred from power, not measured. In BF16 GEMM, stock ran 1,711 MHz at 322 W, and the undervolt ran 1,695 MHz at 293 W.
 
 At stock, the throttled tensor cores leave power headroom, and the card boosts past 1695 MHz on its own: stock prefill averaged 1,788 MHz. Capping the clock just costs speed. Within the same boot, the undervolt made the card slower on every image and prefill workload:
 
