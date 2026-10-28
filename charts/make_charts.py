@@ -119,7 +119,7 @@ def pct(x):
 
 
 def headline(data):
-    fig = frame("Undervolting made my RTX 3090 faster",
+    fig = frame("GPU Unlock on an RTX 3090: up to 68% faster, undervolt included",
                 "GPU Unlock alone, then GPU Unlock + a +150 MHz undervolt. Speed vs stock, higher is better.",
                 "RTX 3090, stock 350 W limit. Median of 10 timed runs per bar. Stock = the faster of two stock sessions.")
     ax = fig.add_axes([0.07, 0.2, 0.9, 0.52])

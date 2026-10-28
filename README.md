@@ -1,8 +1,8 @@
-# Undervolting made my 3090 faster: GPU Unlock + a +150 MHz undervolt
+# A free kernel module made my RTX 3090 generate images 55% faster with 40% less energy
 
-[GPU Unlock](https://github.com/Zagitta/gpu-unlock) lifts the GeForce throttle on FP16/BF16 tensor-core math with FP32 accumulation on Ampere cards. On my RTX 3090 it made Z-Image Turbo 51% faster, SD 1.5 38% faster and vLLM prefill 61% faster. Adding my existing +150 MHz undervolt on top made all three faster still: **+55%, +41% and +68%**, at about **40% less energy per output**. Every hashed output stayed bit-identical to stock, including a 2-hour soak of 540 image batches.
+[GPU Unlock](https://github.com/Zagitta/gpu-unlock) is a small open-source Linux kernel module that lifts the GeForce throttle on FP16/BF16 tensor-core math (with FP32 accumulation) on RTX 30-series cards. On my RTX 3090 it made Z-Image Turbo **51% faster**, SD 1.5 **38% faster** and vLLM prompt processing **61% faster**. Every hashed output stayed bit-identical to stock, including a 2-hour soak of 540 image batches.
 
-Without the unlock, the same undervolt made the card 3–6% *slower*.
+The surprise: my +150 MHz undervolt, which made the card 3–6% *slower* at stock, made it *faster* once unlocked. With both: **+55% Z-Image, +41% SD 1.5, +68% prefill**, at about **40% less energy per output**. [Why the undervolt helps](#why-the-undervolt-helps).
 
 ![Speed vs stock: Z-Image +51% unlocked, +55% unlocked and undervolted; SD 1.5 +38% / +41%; vLLM prefill +61% / +68%](charts/speedup.png)
 
