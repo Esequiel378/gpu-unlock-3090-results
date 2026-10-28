@@ -1,0 +1,46 @@
+session      unl uv  workload          n  primary median (min-max)          avg W   J/output SM MHz  per MHz peak C  fan pass
+session1     off off gemm_bf16        10  70.02 (69.91-70.24) TFLOPS          322      4.600   1711   0.0409     73   98 10/10
+session1     off off gemm_fp16        10  68.62 (68.51-68.75) TFLOPS          326      4.750   1684   0.0408     75   98 10/10
+session1     off off gemm_tf32        10  37.24 (37.11-37.54) TFLOPS          313      8.410   1821   0.0204     76   99 10/10
+session1     off off llm_tokens        2  48.70 (48.42-48.99) out tok/s       336      6.890   1758              81  100 2/2
+session1     off off sd15             10  6.63 (6.60-6.64) s/img              331   2197.509   1764              83  100 10/10
+session1     off off vllm_decode_b1   10  49.10 (49.05-49.20) out tok/s       344      7.015   1796              80   98 -
+session1     off off vllm_decode_b32  10  1192.26 (1191.23-1194.19) out tok/s    343      0.287   1720              81   99 -
+session1     off off vllm_prefill     10  4534.71 (4516.86-4554.25) in tok/s    340      0.075   1788              83  100 -
+session1     off off zimage           10  7.74 (7.67-7.80) s/img              319   2478.026   1820              81   99 10/10
+session1     off on  gemm_bf16        10  70.80 (70.80-70.80) TFLOPS          293      4.139   1695   0.0418     70   99 10/10
+session1     off on  gemm_fp16        10  70.80 (70.79-70.80) TFLOPS          307      4.336   1695   0.0418     73   99 10/10
+session1     off on  gemm_tf32        10  35.18 (35.18-35.18) TFLOPS          238      6.764   1695   0.0208     70   99 10/10
+session1     off on  llm_tokens        2  48.37 (48.36-48.39) out tok/s       290      6.002   1695              76  100 2/2
+session1     off on  sd15             10  6.82 (6.81-6.83) s/img              265   1805.496   1695              76  100 10/10
+session1     off on  vllm_decode_b1   10  48.50 (48.49-48.53) out tok/s       283      5.836   1695              76  100 -
+session1     off on  vllm_decode_b32  10  1187.45 (1186.75-1188.71) out tok/s    309      0.261   1695              78   99 -
+session1     off on  vllm_prefill     10  4303.24 (4303.09-4303.33) in tok/s    250      0.058   1695              69   99 -
+session1     off on  zimage           10  8.19 (8.15-8.26) s/img              243   1982.690   1695              75  100 10/10
+session2     on  off gemm_bf16        10  115.14 (114.62-115.51) TFLOPS       308      2.677   1543   0.0746     68   95 10/10
+session2     on  off gemm_fp16        10  112.26 (112.07-112.59) TFLOPS       312      2.778   1517   0.0740     66   90 10/10
+session2     on  off gemm_tf32        10  62.79 (62.64-63.00) TFLOPS          293      4.660   1670   0.0376     65   87 10/10
+session2     on  off llm_tokens        2  50.92 (50.91-50.92) out tok/s       339      6.666   1848              67   86 2/2
+session2     on  off sd15             10  4.64 (4.63-4.65) s/img              326   1515.002   1650              68   89 10/10
+session2     on  off vllm_decode_b1   10  51.14 (51.11-51.20) out tok/s       341      6.672   1852              66   93 -
+session2     on  off vllm_decode_b32  10  1320.29 (1319.51-1322.77) out tok/s    344      0.261   1751              67   85 -
+session2     on  off vllm_prefill     10  7505.43 (7500.84-7516.08) in tok/s    335      0.045   1599              69   94 -
+session2     on  off zimage           10  4.95 (4.90-5.00) s/img              302   1500.477   1693              66   81 10/10
+session2     on  on  gemm_bf16        10  121.12 (120.89-121.37) TFLOPS       294      2.423   1552   0.0780     66   95 10/10
+session2     on  on  gemm_fp16        10  118.32 (118.23-118.42) TFLOPS       298      2.518   1523   0.0777     65   89 10/10
+session2     on  on  gemm_tf32        10  65.96 (65.81-66.01) TFLOPS          280      4.251   1643   0.0401     65   86 10/10
+session2     on  on  llm_tokens        2  50.39 (50.35-50.42) out tok/s       274      5.441   1695              63   87 2/2
+session2     on  on  sd15             10  4.52 (4.51-4.57) s/img              315   1423.299   1677              67   88 10/10
+session2     on  on  vllm_decode_b1   10  50.63 (50.56-50.66) out tok/s       268      5.291   1695              61   91 -
+session2     on  on  vllm_decode_b32  10  1317.36 (1316.01-1318.95) out tok/s    309      0.235   1692              66   85 -
+session2     on  on  vllm_prefill     10  7842.85 (7840.73-7848.58) in tok/s    334      0.043   1666              68   93 -
+session2     on  on  zimage           10  4.82 (4.78-4.87) s/img              292   1410.290   1684              65   80 10/10
+session3     off off gemm_bf16        10  70.98 (70.95-71.14) TFLOPS          319      4.496   1736   0.0409     66   89 10/10
+session3     off off gemm_fp16        10  69.75 (69.68-69.93) TFLOPS          322      4.614   1708   0.0409     67   88 10/10
+session3     off off gemm_tf32        10  37.81 (37.78-37.87) TFLOPS          310      8.200   1832   0.0207     67   88 10/10
+session3     off off llm_tokens        2  49.24 (49.22-49.25) out tok/s       338      6.874   1858              64   82 2/2
+session3     off off sd15             10  6.40 (6.39-6.41) s/img              331   2119.292   1835              66   84 10/10
+session3     off off vllm_decode_b1   10  49.42 (49.41-49.44) out tok/s       337      6.823   1866              63   88 -
+session3     off off vllm_decode_b32  10  1209.77 (1208.53-1210.75) out tok/s    337      0.279   1798              65   84 -
+session3     off off vllm_prefill     10  4662.32 (4650.89-4684.13) in tok/s    340      0.073   1839              69   97 -
+session3     off off zimage           10  7.46 (7.43-7.52) s/img              317   2369.154   1878              65   79 10/10

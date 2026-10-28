@@ -1,0 +1,7 @@
+session,boot_id,unlock,undervolt,workload,run,seconds,throughput,avg_w,joules,avg_sm_mhz,peak_c,peak_fan,output_sha256,pass
+stock-ref-2,boot-1,off,off,llm_tokens,1,52.0076,49.2235,337.3,17543.2,1851,71,92,43db3bb79bae8341d08c5b8252f207551fe15c46a40206605aae47ddcda0edd4,1
+stock-ref-2,boot-1,off,off,llm_tokens,2,52.1212,49.1163,346.2,18044.0,1831,74,96,43db3bb79bae8341d08c5b8252f207551fe15c46a40206605aae47ddcda0edd4,1
+stock-ref-2,boot-1,off,off,sd15,1,26.0890,0.1533,331.5,8649.5,1819,74,98,e530aa361278a40a140d7e2fa258c417daf45885432e9573170a52a641de4ec6,1
+stock-ref-2,boot-1,off,off,sd15,2,26.0850,0.1533,332.3,8668.4,1789,76,99,e530aa361278a40a140d7e2fa258c417daf45885432e9573170a52a641de4ec6,1
+stock-ref-2,boot-1,off,off,zimage,1,7.6020,0.1315,320.4,2436.1,1840,73,99,dcae60c93e7953abb45e7048e7d8c66895e97c4556a3ddaf4ba6d89a2aa2a14f,1
+stock-ref-2,boot-1,off,off,zimage,2,7.6610,0.1305,322.9,2473.6,1845,74,98,dcae60c93e7953abb45e7048e7d8c66895e97c4556a3ddaf4ba6d89a2aa2a14f,1

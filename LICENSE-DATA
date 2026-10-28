@@ -1,0 +1,11 @@
+The benchmark data and charts in this repository (results/ and charts/*.png)
+are licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0): https://creativecommons.org/licenses/by/4.0/legalcode
+
+Copyright (c) 2026 the gpu-unlock-3090-results authors
+
+The scripts and the NixOS module are MIT-licensed (see LICENSE).
+
+nixos/gpu-unlock.nix does not include GPU Unlock or any NVIDIA file. It
+fetches them at build time: GPU Unlock (https://github.com/Zagitta/gpu-unlock)
+is GPL-2.0, and the NVIDIA driver files stay under NVIDIA's license.

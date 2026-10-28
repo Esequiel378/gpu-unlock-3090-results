@@ -1,0 +1,3 @@
+session,boot_id,unlock,undervolt,workload,run,seconds,throughput,avg_w,joules,avg_sm_mhz,peak_c,peak_fan,output_sha256,pass
+dryrun-soak,boot-1,off,on,sd15,1,27.2540,0.1468,250.7,6833.3,1695,66,81,e530aa361278a40a140d7e2fa258c417daf45885432e9573170a52a641de4ec6,1
+dryrun-soak,boot-1,off,on,zimage,2,8.1360,0.1229,234.8,1910.6,1695,65,82,dcae60c93e7953abb45e7048e7d8c66895e97c4556a3ddaf4ba6d89a2aa2a14f,1
